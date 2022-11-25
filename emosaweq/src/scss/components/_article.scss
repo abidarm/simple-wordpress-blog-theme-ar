@@ -1,0 +1,90 @@
+.art-header, .art-body {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: $boxShadow;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.art-header {
+    .art-cat {
+        color: #555;
+        font-size: 0.9rem;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+    h1 {
+        color: #3c4859;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 10px 0;
+        line-height: 1.2;
+    }
+    time {
+        color: #555;
+        font-size: 0.83rem;
+
+        i {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.art-img {
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: block;
+        border-radius: 3px;
+    }
+    box-shadow: $boxShadow;
+    margin-bottom: 20px;
+}
+
+.art-body {
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    p {
+        margin-bottom: 15px;
+    }
+    strong, b {
+        font-weight: 500;
+    }
+    h2,h3,h4,h5 {
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 21px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    ul {
+        padding-right: 40px;
+        list-style: disc;
+        margin-bottom: 15px;
+    }
+    a {
+        color: $primaryColor;
+        opacity: .9;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.art-tags a {
+    margin-right: 8px;
+    padding: 3px 5px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #ccc;
+}

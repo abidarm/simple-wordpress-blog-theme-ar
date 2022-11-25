@@ -1,0 +1,32 @@
+.related-posts {
+    margin-bottom: 20px;
+
+    .related-post {
+        margin-bottom: 15px;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    .related-det {
+        background: #fff;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 15px;
+        line-height: 1.2;
+    }
+
+    .rel-cat {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 10px;
+        display: block;
+
+        i {
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+    }
+}

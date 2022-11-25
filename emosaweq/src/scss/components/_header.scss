@@ -1,0 +1,166 @@
+.header {
+    background: #fff;
+    color: #333;    
+    box-shadow: $boxShadow;
+}
+
+.topbar {
+    background: $primaryColor;
+    color: #fff;
+    font-size: 0.82rem;
+    padding: 10px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+
+        li a {
+            display: inline-block;
+            padding-left: 20px;
+        }
+    }
+
+    .head-social a {
+        color: #fff;
+        font-size: .85rem;
+        margin-right: 4px;
+    }
+
+    a:hover {
+        color: #a5a9e5;
+    }
+}
+
+.navbar {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-btn {
+        display: none;
+        span {
+            &,
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                position: relative;
+            }
+            &::before {
+                top: -5px;
+            }
+            &::after {
+                top: 3px;
+            }
+        }
+    }
+
+    .logo {
+        width: 230px;
+        
+        a {
+            font-weight: 600;
+            font-size: 20px;
+            color: $secondaryColor;
+        }
+    }
+
+
+    .main-nav {
+        width: 100%;
+
+        .nav-close {
+            display: none;
+        }
+    }
+
+    .main-nav ul {
+        display: flex;
+
+        li a {
+            display: inline-block;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+    }
+
+    .btn {
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        padding: 5px 0;
+
+        .menu-btn {
+            display: inline-block;
+        }
+        .logo {
+            width: auto;
+        }
+        .main-nav {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: -100%;
+            z-index: 9999;
+            transition: .3s right ease-in-out;
+
+            .nav-close {
+                display: block;
+                background: #fff;
+                padding: 10px 20px;
+                width: 80%;
+                max-width: 300px;
+                cursor: pointer;
+            }
+
+            ul {
+                width: 80%;
+                max-width: 300px;
+                background: #fff;
+                flex-direction: column;
+                height: 100%;
+
+                li {
+                    border-top: 1px solid #eee;
+
+                    a {
+                        display: block;
+                        padding: 15px 20px;
+                    }
+                }
+            }
+
+            &.show {
+                background: rgba(0,0,0,.4);
+                // display: block;
+                right: 0;
+            }
+        }
+    }
+    
+}
+@media (max-width: 480px) {
+    .header {
+        border-top: 2px solid $primaryColor;
+    }
+    .topbar {
+        display: none;
+    }
+}
